@@ -1,4 +1,4 @@
-package c04.haps.coronaware;
+package cfour.haps.coronaware;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
