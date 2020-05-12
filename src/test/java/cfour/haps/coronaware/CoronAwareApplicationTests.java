@@ -1,10 +1,10 @@
-package c04.haps.coronaware;
+package cfour.haps.coronaware;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CoronawareApplicationTests {
+class CoronAwareApplicationTests {
 
 	@Test
 	void contextLoads() {
