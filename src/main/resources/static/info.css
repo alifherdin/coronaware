@@ -1,16 +1,43 @@
-body {
-    overflow: hidden;
-    background-color: palegreen;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+html{
+    scroll-behavior: smooth;
 }
 
-.container {
-    text-align: center;
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #162447;
+}
+
+.judul {
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100vh;
     width: 100%;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Fredoka One", cursive;
+    color: white;
+}
+
+.judul img {
+    display: block;
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.tulisan {
+    text-align: justify;
+    font-family: 'Lato', sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: larger;
+    color: white;
 }
 
 .home-menu {
