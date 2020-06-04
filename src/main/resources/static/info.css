@@ -1,16 +1,30 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body {
-    overflow: hidden;
-    background-color: palegreen;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #162447;
 }
 
 .container {
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 50vh;
     width: 100%;
     flex-direction: column;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.tulisan {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
 }
 
 .home-menu {
