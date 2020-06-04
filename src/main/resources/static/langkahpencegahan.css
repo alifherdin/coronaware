@@ -1,30 +1,45 @@
 body {
-    background-color: #d64161;
+    font-family: "Roboto", sans-serif;
+    background-color: #162447;
 }
 
 #container {
-    background-color: #ff7b25;
+    background-color: #162447;
     width: 1000px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    border: thick solid #6b5b95;
 }
 
 #header {
-    background-color: #6b5b95;
-    color: #feb236;
+    color: #fff;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-palette: light;
     padding: 10px;
+    font-weight: bold;
+}
+
+br {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 10vh;
+}
+#judulpenjelas {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 10vh;
 }
 
 #content {
-    color: snow;
+    color: #F0CB35;
     display: inline-block;
     width: 1000px;
     margin: -5px;
+    font-weight: bold;
+
 }
 
 #main1 {
@@ -37,42 +52,43 @@ body {
 #main2 {
     display: inline-block;
     text-align: center;
-    padding: 10px;
+    justify-content: space-around;
+    margin-bottom: 7vh;
     float: right;
 }
 
 #langkah1 {
-    background-color: #6b5b95;
+    background-color: #555;
     padding: 5px;
     margin: 5px;
 }
 
 #langkah2 {
-    background-color: #6b5b95;
+    background-color: #555;
     padding: 5px;
     margin: 5px;
 }
 
 #langkah3 {
-    background-color: #6b5b95;
+    background-color: #555;
     padding: 5px;
     margin: 5px;
 }
 
 #langkah4 {
-    background-color: #6b5b95;
+    background-color: #555;
     padding: 5px;
     margin: 5px;
 }
 
 #langkah5 {
-    background-color: #6b5b95;
+    background-color: #555;
     padding: 5px;
     margin: 5px;
 }
 
 #langkah6 {
-    background-color: #6b5b95;
+    background-color: #555;
     padding: 5px;
     margin: 5px;
 }

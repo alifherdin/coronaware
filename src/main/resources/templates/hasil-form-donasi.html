@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="utf-8">
+    <title>Bar Chart</title>
+    <link rel="stylesheet" href="Statistik.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+        <!--chart start-->
+        <section class="header">
+            <a href="#konten" class="smooth">
+            <div class="box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </a>
+        </section>
+        <section class="konten" id="konten">
+            <h1> Statistik Corona di Indonesia</h1>
+            <h3>Laman ini menampilkan Statistik Corona di Indonesiaselama 1 Minggu kebelakang<br> dan disajikan dengan selengkap dan sepraktis mungkin</h3>
+            <div class="statistik">
+                <div class="box-text">
+                    <div class="angka">28233</div>
+                    <div class="huruf">Terkonfirmasi</div>
+                </div>
+                <div class="box-text">
+                    <div class="angka">18129</div>
+                    <div class="huruf">Dalam Perawatan</div></div>
+                <div class="box-text">
+                    <div class="angka">8406</div>
+                    <div class="huruf">Sembuh</div></div>
+                <div class="box-text">
+                    <div class="angka">1698</div>
+                    <div class="huruf">Meninggal</div></div>
+            </div>
+
+            <h5>Berikut Merupakan Statistik yang disediakan oleh tim CoronaWare</h5>
+            <div class="button-accordion">
+                <button class="accordion"><h4>Angka Kasus</h4></button>
+                    <div class="panel">   
+                        <h2 class="PeningkatanKasus">Statistik Peningkatan Kasus</h2>
+                        <div class="chart">
+                        <ul class="numbers">
+                            <li><span>1000</span></li>
+                            <li><span>500</span></li>
+                            <li><span>0</span></li>
+                        </ul>
+                        <ul class="bars">
+                            <li><div class="bar" data-percentage="686"></div><span>27 Mei</span></li>
+                            <li><div class="bar" data-percentage="687"></div><span>28 Mei</span></li>
+                            <li><div class="bar" data-percentage="678"></div><span>29 Mei</span></li>
+                            <li><div class="bar" data-percentage="557"></div><span>30 Mei</span></li>
+                            <li><div class="bar" data-percentage="700"></div><span>31 Mei</span></li>
+                            <li><div class="bar" data-percentage="467"></div><span>1 Juni</span></li>
+                            <li><div class="bar" data-percentage="609"></div><span>2 Juni</span></li>
+                            
+                        </ul>
+                        </div>
+                    </div>
+                
+                <button class="accordion1"><h4>Angka Kematian</h4></button>
+                <div class="panel">   
+                    <h2 class="PeningkatanKasus">Statistik Peningkatan Kematian</h2>
+                    <div class="chart">
+                    <ul class="numbers">
+                        <li><span>100</span></li>
+                        <li><span>50</span></li>
+                        <li><span>0</span></li>
+                    </ul>
+                    <ul class="bars1">
+                        <li><div class="bar1" data-percentage="55"></div><span>27 Mei</span></li>
+                        <li><div class="bar1" data-percentage="23"></div><span>28 Mei</span></li>
+                        <li><div class="bar1" data-percentage="24"></div><span>29 Mei</span></li>
+                        <li><div class="bar1" data-percentage="53"></div><span>30 Mei</span></li>
+                        <li><div class="bar1" data-percentage="40"></div><span>31 Mei</span></li>
+                        <li><div class="bar1" data-percentage="28"></div><span>1 Juni</span></li>
+                        <li><div class="bar1" data-percentage="22"></div><span>2 Juni</span></li>
+                            
+                        </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer">
+
+            </div>
+        </section>
+        <!--chart end-->
+
+        <script type="text/javascript">
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var acc1 = document.getElementsByClassName("accordion1");
+        var i;
+
+        for (i = 0; i < acc.length; i++) { 
+        acc[i].addEventListener("click", function() {
+            
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            $(function(){
+                $('.bars li .bar').each(function(key, bar){
+                var percentage = 0;
+                $(this).animate({
+                    'height' : percentage +'%'
+                },1000);
+                });
+            });
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            $(function(){
+                $('.bars li .bar').each(function(key, bar){
+                var percentage = $(this).data('percentage')/10;
+                $(this).animate({
+                    'height' : percentage +'%'
+                },1000);
+                });
+            });
+            }    
+        });
+        acc1[i].addEventListener("click", function() {
+            
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            $(function(){
+                $('.bars1 li .bar1').each(function(key, bar){
+                var percentage = 0;
+                $(this).animate({
+                    'height' : percentage +'%'
+                },1000);
+                });
+            });
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            $(function(){
+                $('.bars1 li .bar1').each(function(key, bar){
+                var percentage = $(this).data('percentage');
+                $(this).animate({
+                    'height' : percentage +'%'
+                },1000);
+                });
+            });
+            }    
+        });
+        }
+        </script>
+
+  </body>
+</html>
+                           

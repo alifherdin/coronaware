@@ -15,4 +15,9 @@ public class MainController {
     public String langkahpecegahan() {
         return "langkah-pencegahan";
     }
+
+    @GetMapping("/Statistik")
+    public String statistik() {
+        return "hasil-form-donasi";
+    }
 }

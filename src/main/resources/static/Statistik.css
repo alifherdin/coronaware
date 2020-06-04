@@ -1,0 +1,242 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background-color: #162447;
+  }
+
+  .header{
+    height: 10vh;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: url(./img/virus.jpg);
+    background-size: cover;
+    justify-content: center;
+  }
+
+  .konten{
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+
+
+  h1{ 
+    color: #fff;
+    margin-top: 100px;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+  }
+
+  h3{
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 0px;
+    color: #fff;
+    margin-bottom: 10vh;
+  }
+
+  h5{
+      color: #fff;
+      font-size: 16px;
+      margin-bottom: 1.5vh; 
+      font-weight: 100;
+  }
+
+  .PeningkatanKasus{
+      color: #fff;
+      font-weight: 600;
+  }
+  .chart{
+    width: 600px;
+    height: 400px;
+    display: block;
+  }
+  
+  .numbers{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+  }
+  
+  .numbers li{
+    list-style: none;
+    height: 150px;
+    position: relative;
+    bottom: 145px;
+  }
+  
+  .numbers span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    
+  }
+  
+  .bars, .bars1{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    background: #555;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 #555;
+    border-radius: 5px;
+  }
+  
+  .bars li, .bars1 li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+  }
+  
+  .bars span, .bars1 span{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+  }
+  
+  .bars .bar, .bars1 .bar1{
+    display: block;
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 12px;
+    text-align: center;
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+  }
+  
+  .bars .bar:hover, .bars1 .bar1:hover{
+    background: #C02425;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F0CB35, #C02425);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F0CB35, #C02425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+  }
+  
+  .bars .bar:before, .bars1 .bar1:before{
+    color: #fff;
+    content: attr(data-percentage);
+    position: relative;
+    bottom: 20px;
+  }
+
+  .accordion, .accordion1{
+    background-color: #162447;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    padding: 0px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    overflow: hidden;
+  }
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+  }
+  .statistik{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 7vh;
+  }
+  .box-text{
+      background-color: #555;
+      width: 200px;
+      height: 100px;
+      border-radius: 5px;
+      justify-content: center;
+      text-align: center;
+      display: center;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+  }
+
+  .accordion h4, .accordion1 h4{
+    color: #fff;
+    margin-top: 0px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .angka{
+      font-size: 64px;
+      color: #F0CB35;
+      font-weight: bold;
+      margin-bottom: 0px;
+  }
+  .huruf{
+      font-size: 16px;
+      color: #fff;
+  }
+
+  .footer{
+      margin-bottom: 45vh;
+  }
+
+  .box{
+      position: absolute;
+      left: 50%;
+      top: 90%;
+      transform: translate(-50%,-50%);
+  }
+
+  .box span{
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid #fff;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+  }
+
+    .box span:nth-child(2){
+      animation-delay: -0.2s;
+  }
+    .box span:nth-child(3){
+    animation-delay: -0.4s;
+}
+  @keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+      }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+
+  }
