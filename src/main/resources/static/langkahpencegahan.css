@@ -6,15 +6,13 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #162447;
 }
 
 #container {
     background-color: #162447;
-    width: 1000px;
-    height: 1200px;
-    padding: 10px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -23,73 +21,105 @@ body {
     color: #fff;
     text-align: center;
     font-palette: light;
-    padding: 10px;
+    height: 10vh;
+    min-height: 100vh;
+    font-weight: bold;
+    background: url(./img/virus.jpg);
+    background-size: cover;
 }
 
-#judul {
+.judul {
+    top: 30vh;
     font-weight: bold;
     font-size: 56px;
 }
-
-#penjelasanjudul {
-    font-size: 16px;
+.jdl1 {
+    font-family: "Fredoka One", cursive;
+    font-weight: 600;
+    font-size: 6vh;
+    color: #fff;
+    top: 30vh;
+    text-align: center;
 }
 
-br {
-    font-size: 16px;
-    font-weight: 100;
-    margin-top: 0px;
-    margin-bottom: 10vh;
+.jdl2 {
+    font-family: "Fredoka One", cursive;
+    font-size: 2vh;
+    top: 45vh;
+    color: #F0CB35;
 }
 
-
-#judulpenjelas {
-    font-size: 16px;
-    font-weight: 100;
-    margin-top: 0px;
-    margin-bottom: 10vh;
+h1 {
+    margin-left: 20vh;
+    width: 100%;
+    text-align: left;
+    vertical-align: bottom;
+    color: #ffffff;
 }
 
-#content {
+.content {
     color: #F0CB35;
     display: inline-block;
-    width: 1000px;
-    margin: -5px;
+    width: 500px;
     font-weight: bold;
-    height: 1500px;
+    max-height: 1200px;
+    justify-content: center;
+    align-items: center;
 }
 
-#main1 {
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    float: left;
-    width: 50%;
-    height: 100%;
-    margin-left: 5px;
-}
-
-#main2 {
-    display: inline-block;
-    text-align: center;
-    justify-content: space-around;
-    margin-bottom: 7vh;
+.ctn2 {
+    margin-right: 20vh;
     float: right;
 }
 
+.ctn1 {
+    float: left;
+    margin-left: 20vh;
+}
 .accordion {
-    background-color: #555;
-    color: #F0CB35;
     cursor: pointer;
     text-align: center;
-    width: 400px;
-    height: 77px;
-    border-radius: 5px;
+    font-size: larger;
+    width: 100%;
+    height: 11vh;
+    border-radius: 30px;
     border: none;
     outline: none;
     transition: 0.4s;
-    margin-top: 5px;
+    margin-top: 5vh;
 }
+
+.acn1,.acn2,.acn3 {
+    color: #fff;
+    background-size: 200%;
+    padding: 15px 20px;
+    font-size: larger;
+    cursor: pointer;
+    transition: 0.6s;
+    background-image: linear-gradient(to left, #9be4ff, #017ab0, #9be4ff);
+    font-weight: bold;
+}
+
+.acn4,.acn5,.acn6 {
+    color: #fff;
+    background-size: 200%;
+    padding: 15px 20px;
+    font-size: larger;
+    cursor: pointer;
+    transition: 0.6s;
+    background-image: linear-gradient(to left, #9be4ff, #017ab0, #9be4ff);
+    font-weight: bold;
+}
+
+.acn1:hover,.acn2:hover,.acn3:hover {
+    background-position: right;
+}
+
+.acn4:hover,.acn5:hover,.acn6:hover {
+    background-position: right;
+}
+
+
 
 .active, .accordion:hover {
     background-color: #555;
@@ -98,44 +128,12 @@ br {
 .panel {
     background-color: white;
     display: none;
-    width: 400px;
     max-height: 0;
     overflow: hidden;
+    width: 100%;
     transition: max-height 0.2s ease-out;
     margin-bottom: 5px;
+    border-radius: 30px;
+    text-align: center;
 }
 
-#langkah2 {
-    background-color: #555;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-#langkah3 {
-    background-color: #555;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-#langkah4 {
-    background-color: #555;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-#langkah5 {
-    background-color: #555;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
-
-#langkah6 {
-    background-color: #555;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
