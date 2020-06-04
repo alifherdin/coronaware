@@ -29,37 +29,37 @@ body{
   .judul{
     font-family: "Fredoka One", cursive;
     font-weight: 600;
-    font-size: 56px;
+    font-size: 6vh;
     color: #fff;
     position: absolute;
-    top: 30%;
+    top: 30vh;
     text-align: center;
   }
 
   .subjudul{
     font-family: "Fredoka One", cursive;
-    font-size: 18px;
+    font-size: 2vh;
     position: absolute;
-    top: 45%;
+    top: 45vh;
     color: #F0CB35;
   }
 
   .konten{
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 30vh;
+    margin-right: 30vh;
   }
 
 
   h1{ 
     color: #fff;
-    margin-top: 100px;
-    font-size: 56px;
+    margin-top: 6vh;
+    font-size: 6vh;
     font-weight: bold;
     margin-bottom: 2vh;
   }
 
   h3{
-    font-size: 16px;
+    font-size: 2vh;
     font-weight: 100;
     margin-top: 0px;
     color: #fff;
@@ -136,6 +136,7 @@ body{
     position: absolute;
     bottom: -30px;
     text-align: center;
+    left: 4px;
   }
   
   .bars .bar, .bars1 .bar1{
@@ -192,17 +193,17 @@ body{
   }
   .box-text{
       background-color: #fff;
-      width: 200px;
-      height: 100px;
+      width: 20vh;
+      height: 10vh;
       border-radius: 5px;
       justify-content: center;
       text-align: center;
       display: center;
       align-items: center;
-      padding-left: 16px;
-      padding-right: 16px;
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding-left: 2vh;
+      padding-right: 2vh;
+      padding-top: 1vh;
+      padding-bottom: 1vh;
   }
 
   .accordion h4, .accordion1 h4{
@@ -213,13 +214,13 @@ body{
     margin-bottom: 5px;
   }
   .angka{
-      font-size: 64px;
+      font-size: 6vh;
       color: #F0CB35;
       font-weight: bold;
       margin-bottom: 0px;
   }
   .huruf{
-      font-size: 16px;
+      font-size: 2vh;
       color: #555;
   }
 
