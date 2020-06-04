@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fredoka One", cursive;
+}
+
+.fix {
+  clear: both;
+  overflow: hidden;
+}
+
+header {
+  overflow: hidden;
+  height: 100vh;
+}
+
+.vid-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.nav {
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  left: 50px;
+}
+
+.logo {
+  margin: 0 50 px;
+  height: 60px;
+  float: left;
+  color: #fff;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+
+.banner-text {
+  position: fixed;
+  top: 30%;
+  text-align: center;
+  left: 27%;
+}
+
+.banner-text h2 {
+  color: #fff;
+  font-size: 120px;
+  margin: 0;
+}
+
+.banner-text h2 span {
+  background: -webkit-linear-gradient(#fefeff, #0f93ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-text p {
+  color: #fff;
+  font-size: 25px;
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  color: #fff;
+  background-size: 200%;
+  padding: 15px 20px;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.6s;
+  position: relative;
+  border-radius: 30px;
+  bottom: -40px;
+}
+
+.btn1,
+.btn2,
+.btn3 {
+  background-image: linear-gradient(to left, #9be4ff, #017ab0, #9be4ff);
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  background-position: right;
+}
