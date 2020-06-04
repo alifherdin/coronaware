@@ -18,6 +18,6 @@ public class MainController {
 
     @GetMapping("/Statistik")
     public String statistik() {
-        return "hasil-form-donasi";
+        return "statistik-corona";
     }
 }
