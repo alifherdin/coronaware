@@ -14,9 +14,11 @@ body {
 #header {
     color: #fff;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-palette: light;
     padding: 10px;
+}
+
+#judul {
     font-weight: bold;
 }
 
@@ -26,6 +28,8 @@ br {
     margin-top: 0px;
     margin-bottom: 10vh;
 }
+
+
 #judulpenjelas {
     font-size: 16px;
     font-weight: 100;
