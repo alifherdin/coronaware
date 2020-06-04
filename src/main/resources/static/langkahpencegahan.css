@@ -66,7 +66,6 @@ br {
     float: left;
     width: 50%;
     height: 100%;
-    margin-left: 5px;
 }
 
 #main2 {
@@ -99,6 +98,7 @@ br {
     background-color: white;
     display: none;
     width: 400px;
+    margin-left: 5vh;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
