@@ -20,6 +20,11 @@ body {
 
 #judul {
     font-weight: bold;
+    font-size: 56px;
+}
+
+#penjelasanjudul {
+    font-size: 16px;
 }
 
 br {
@@ -51,6 +56,7 @@ br {
     text-align: center;
     padding: 10px;
     float: left;
+    width: 50%;
 }
 
 #main2 {
@@ -61,38 +67,64 @@ br {
     float: right;
 }
 
-#langkah1 {
+.accordion {
     background-color: #555;
+    color: #F0CB35;
+    cursor: pointer;
+    text-align: center;
     padding: 5px;
-    margin: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #555;
+}
+
+.panel {
+    padding: 5px;
+    background-color: white;
+    width: 98%;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 #langkah2 {
     background-color: #555;
     padding: 5px;
     margin: 5px;
+    border-radius: 5px;
 }
 
 #langkah3 {
     background-color: #555;
     padding: 5px;
     margin: 5px;
+    border-radius: 5px;
 }
 
 #langkah4 {
     background-color: #555;
     padding: 5px;
     margin: 5px;
+    border-radius: 5px;
 }
 
 #langkah5 {
     background-color: #555;
     padding: 5px;
     margin: 5px;
+    border-radius: 5px;
 }
 
 #langkah6 {
     background-color: #555;
     padding: 5px;
     margin: 5px;
+    border-radius: 5px;
 }
