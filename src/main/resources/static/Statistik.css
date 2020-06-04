@@ -10,6 +10,12 @@ body{
     background-color: #162447;
   }
 
+  .button-accordion{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
   .header{
     height: 10vh;
     width: 100%;
@@ -75,6 +81,7 @@ body{
     width: 600px;
     height: 400px;
     display: block;
+    margin: auto;
   }
   
   .numbers{
