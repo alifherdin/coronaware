@@ -10,11 +10,38 @@ body {
     background-color: #162447;
 }
 
+footer {
+    margin-top: 10vh;
+    color: grey;
+    height: 5vh;
+    text-align: center;
+    background-color: #0F1931;
+}
+
+h1 {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#ftr {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 #container {
     background-color: #162447;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 #header {
@@ -26,6 +53,17 @@ body {
     font-weight: bold;
     background: url(./img/virus.jpg);
     background-size: cover;
+}
+
+#header2 {
+    margin-left: 40vh;
+    margin-right: 40vh;
+    text-align: center;
+    color: #ffffff;
+    background-color: grey;
+    border-radius: 30px;
+    font-weight: bold;
+    height: 7vh;
 }
 
 .judul {
@@ -49,32 +87,22 @@ body {
     color: #F0CB35;
 }
 
-h1 {
-    margin-left: 20vh;
-    width: 100%;
-    text-align: left;
-    vertical-align: bottom;
-    color: #ffffff;
-}
-
 .content {
-    color: #F0CB35;
     display: inline-block;
     width: 500px;
     font-weight: bold;
-    max-height: 1200px;
     justify-content: center;
     align-items: center;
 }
 
 .ctn2 {
-    margin-right: 20vh;
+    margin-right: 25vh;
     float: right;
 }
 
 .ctn1 {
     float: left;
-    margin-left: 20vh;
+    margin-left: 25vh;
 }
 .accordion {
     cursor: pointer;
@@ -111,40 +139,37 @@ h1 {
     font-weight: bold;
 }
 
-.panel {
-    background-color: white;
-    display: none;
-    width: 400px;
-    margin-left: 5vh;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    margin-bottom: 5px;
-}
-
 .acn1:hover,.acn2:hover,.acn3:hover {
     background-position: right;
+    color:black;
 }
 
 .acn4:hover,.acn5:hover,.acn6:hover {
     background-position: right;
+    color:black;
 }
-
-
 
 .active, .accordion:hover {
     background-color: #555;
 }
 
 .panel {
-    background-color: white;
+    background-color: #ADC3D1;
     display: none;
     max-height: 0;
     overflow: hidden;
     width: 100%;
-    transition: max-height 0.2s ease-out;
     margin-bottom: 5px;
     border-radius: 30px;
     text-align: center;
+    opacity: 0.6;
+    transition: 0.6s;
+
 }
+
+.panel:hover {
+    transition: 0.6s;
+    opacity: 1;
+}
+
 
