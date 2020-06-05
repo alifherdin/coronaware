@@ -111,6 +111,17 @@ h1 {
     font-weight: bold;
 }
 
+.panel {
+    background-color: white;
+    display: none;
+    width: 400px;
+    margin-left: 5vh;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 5px;
+}
+
 .acn1:hover,.acn2:hover,.acn3:hover {
     background-position: right;
 }
