@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #162447;
 }
 
@@ -44,18 +44,23 @@ h1 {
     overflow: hidden;
 }
 
-#header {
+#header1 {
     color: #fff;
-    text-align: center;
-    font-palette: light;
     height: 10vh;
     min-height: 100vh;
-    font-weight: bold;
     background: url(./img/virus.jpg);
     background-size: cover;
+    justify-content: center;
 }
 
 #header2 {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+}
+
+#header3 {
     margin-left: 40vh;
     margin-right: 40vh;
     text-align: center;
@@ -66,25 +71,20 @@ h1 {
     height: 7vh;
 }
 
-.judul {
-    top: 30vh;
-    font-weight: bold;
-    font-size: 56px;
-}
-.jdl1 {
+#jdl1 {
     font-family: "Fredoka One", cursive;
     font-weight: 600;
     font-size: 6vh;
     color: #fff;
-    top: 30vh;
     text-align: center;
 }
 
-.jdl2 {
+#jdl2 {
     font-family: "Fredoka One", cursive;
     font-size: 2vh;
-    top: 45vh;
     color: #F0CB35;
+    justify-content: center;
+    text-align: center;
 }
 
 .content {
