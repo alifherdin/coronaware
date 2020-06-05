@@ -4,51 +4,96 @@
     <title>CoronAware: Langkah Pencegahan</title>
     <link rel="stylesheet" th:href="@{langkahpencegahan.css}">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <div class="box">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </head>
 <body>
     <section id="container">
         <section id="header1">
             <div id="header2">
                 <div id="jdl1"> Jangan lupa untuk tetap <br> menerapkan protokol kesehatan </div>
-                <div id="jdl2"> Scroll kebawah untuk melihat protokol kesehatan yang harus dilakukan </div>
+                <div id="jdl2"> Scroll down untuk melihat protokol kesehatan yang harus dilakukam <br>
+                Klik gambar untuk penjelasan lebih lengkap dari website terpercaya</div>
             </div>
         </section>
         <div id="header3">
-            <h1> Langkah-langkah Pencegahan Virus Corona </h1>
+            <h1> Protokol Kesehatan Pencegahan Virus Corona </h1>
         </div>
         <div class="content ctn1">
+
                 <button class="accordion acn1">Mencuci Tangan Dengan Sabun</button>
-                    <div class="panel pnl1"><p>
-                        Membran terluar virus ini terdiri dari lapisan lemak yang mudah larut dalam sabun.
+                    <div class="panel pnl1">
+                        <a href="https://www.who.int/gpsc/5may/How_To_HandWash_Poster.pdf?ua=1" target="_blank">
+                        <img src="./img/washhand.jpg" alt="pencegahan1">
+                        </a>
+                        <p class="tulisan">
+                        Membran terluar virus ini terdiri dari lapisan lemak dan protein. Membran ini mencegah supaya virus
+                            tidak mudah larut dalam air layaknya minyak. Sabun dapat dengan mudah merusak dan melarutkan
+                            lapisan ini. Tanpa membran tersebut, virus akan langsung mati.
                         </p>
                     </div>
-                <button class="accordion acn2">Mencuci Tangan Dengan Sabun</button>
-                <div class="panel pnl2"><p>
-                        Membran terluar virus ini terdiri dari lapisan lemak yang mudah larut dalam sabun.
+
+                <button class="accordion acn2">Memakai Masker</button>
+                <div class="panel pnl2">
+                    <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks"
+                       target="_blank">
+                    <img src="./img/masker2.jpg" alt="pencegahan2">
+                    </a>
+                    <p class="tulisan">
+                        Masker terbukti efektif dalam mengurangi laju penularan virus Corona. Hal ini karena lapisan dalam masker
+                        yang dapat menyaring titik air yang biasa dikeluarkan lewat batuk dan bersin.
                         </p>
                     </div>
-                <button class="accordion acn3">Mencuci Tangan Dengan Sabun</button>
-                <div class="panel pnl3"><p>
-                        Membran terluar virus ini terdiri dari lapisan lemak yang mudah larut dalam sabun.
+
+                <button class="accordion acn3">Lakukan Social Distancing</button>
+                <div class="panel pnl3">
+                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/social-distancing.html" target="_blank">
+                    <img src="./img/socialdistancing.png" alt="pencegahan3">
+                    </a>
+                    <p class="tulisan">
+                        Social Distancing dilakukan dengan menjaga jarak setidaknya 2 meter dengan orang lain. Hal lain yang harus
+                        dilakukan ialah menghindari kontak langsung seperti hal yang biasa kita lakukan yaitu berjabat tangan
                         </p>
                     </div>
+
             </div>
             <div class="content ctn2">
-                <button class="accordion acn4">Mencuci Tangan Dengan Sabun</button>
-                <div class="panel pnl4"><p>
-                    Membran terluar virus ini terdiri dari lapisan lemak yang mudah larut dalam sabun.
+                <button class="accordion acn4">Stay at Home</button>
+                <div class="panel pnl4">
+                    <a href="https://www.who.int/news-room/campaigns/connecting-the-world-to-combat-coronavirus/healthyathome"
+                       target="_blank"><img src="./img/stayathome.jpg" alt="pencegahan4">
+                    </a>
+                    <p class="tulisan">
+                    Stay at Home berguna dalam mencegah diri tertular dan menularkan virus ke orang lain. Aktivitas yang bisa
+                        dilakukan ialah seperti bermain gim, belajar, dan lain-lain.
                 </p>
                 </div>
-                    <button class="accordion acn5">Mencuci Tangan Dengan Sabun</button>
-                    <div class="panel pnl5"><p>
-                        Membran terluar virus ini terdiri dari lapisan lemak yang mudah larut dalam sabun.
+
+                <button class="accordion acn5">Hindari Menyentuh Wajah</button>
+                    <div class="panel pnl5">
+                        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" target="_blank">
+                        <img src="./img/wajah.jpg" alt="pencegahan5">
+                        </a>
+                        <p class="tulisan">
+                        Mulut dan hidung merupakan salah satu vektor penularan virus Corona. Hal ini karena kedua organ tersebut
+                            merupakan jalan utama untuk masuk ke dalam tubuh manusia.
                     </p>
                     </div>
-                    <button class="accordion acn6">Mencuci Tangan Dengan Sabun</button>
-                    <div class="panel pnl6"><p>
-                        Membran terluar virus ini terdiri dari lapisan lemak yang mudah larut dalam sabun.
+
+                    <button class="accordion acn6">Jangan Berbagi Barang Pribadi</button>
+                    <div class="panel pnl6">
+                        <a href="https://www.alodokter.com/8-benda-ini-tidak-boleh-kamu-pinjamkan-lagi" target="_blank">
+                        <img src="./img/gosokgigi.jpg" alt="pencegahan6">
+                        </a>
+                        <p class="tulisan">
+                        Menjaga barang pribadi itu penting dalam mencegah penularan virus Corona. Barang-barang seperti sikat gigi
+                            handuk dan gelas bisa menjadi vektor penyebaran virus dan bakteri-bakteri lainya.
                     </p>
                     </div>
+
                 </div>
             </section>
         <footer>
