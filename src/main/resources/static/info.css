@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -12,6 +12,14 @@ body {
     background-color: #162447;
 }
 
+footer {
+    margin-top: 10vh;
+    color: grey;
+    height: 5vh;
+    text-align: center;
+    background-color: #0F1931;
+}
+
 .judul {
     display: flex;
     align-items: center;
@@ -21,23 +29,96 @@ body {
     flex-direction: column;
     font-family: "Fredoka One", cursive;
     color: white;
+    background: url(./img/virus.jpg);
+    background-size: cover;
+    justify-content: center;
 }
 
-.judul img {
-    display: block;
-    max-width:300px;
-    max-height:300px;
-    width: auto;
-    height: auto;
+.box{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
 }
+
+.box span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+  .box span:nth-child(2){
+    animation-delay: -0.2s;
+}
+  .box span:nth-child(3){
+  animation-delay: -0.4s;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+
+}
+
 
 .tulisan {
     text-align: justify;
-    font-family: 'Lato', sans-serif;
-    margin-left: 200px;
-    margin-right: 200px;
-    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin-left: 190px;
+    margin-right: 190px;
     color: white;
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.ftr {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .home-menu {
@@ -45,7 +126,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
 }
 
